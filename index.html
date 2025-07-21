@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Recipe Search</title>
+  <link rel="stylesheet" href="stylesss.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍳 Simple Recipe Search</h1>
+    <input type="text" id="search-input" placeholder="Search for a recipe..." />
+    <div id="recipes" class="recipes-grid"></div>
+
+    <h2>⭐ Reviews & Ratings</h2>
+    <form id="review-form">
+      <input type="text" id="recipe-name" placeholder="Recipe Name" required />
+      <input type="text" id="reviewer-name" placeholder="Your Name" required />
+      <textarea id="review-text" placeholder="Write your review..." required></textarea>
+      <label for="rating">Rating:</label>
+      <select id="rating">
+        <option value="1">1 ⭐</option>
+        <option value="2">2 ⭐⭐</option>
+        <option value="3">3 ⭐⭐⭐</option>
+        <option value="4">4 ⭐⭐⭐⭐</option>
+        <option value="5">5 ⭐⭐⭐⭐⭐</option>
+      </select>
+      <button type="submit">Submit Review</button>
+    </form>
+
+    <div id="reviews-list">
+      <h3>All Reviews</h3>
+    </div>
+  </div>
+
+  <div id="recipe-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-modal" class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <img id="modal-image" src="" alt="Recipe Image" />
+      <p id="modal-instructions"></p>
+    </div>
+  </div>
+
+  <script src="scripttt.js"></script>
+</body>
+</html>
+

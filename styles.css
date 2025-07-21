@@ -1,0 +1,120 @@
+/* === Base Colors === */
+:root {
+  --pastel-pink: #fcd5ce;
+  --pastel-blue: #d0f4f7;
+  --pastel-yellow: #fff9c4;
+  --pastel-green: #d2f8d2;
+  --text-color: #333;
+  --border-color: #ccc;
+  --bg-light: #fffefa;
+}
+
+/* === Form Styling === */
+form {
+  background-color: var(--pastel-pink);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea,
+form select,
+form button {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+form button {
+  background-color: var(--pastel-green);
+  color: var(--text-color);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #baf2b4;
+}
+
+/* === Reviews Section === */
+.review-item {
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  background-color: var(--pastel-yellow);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+#reviews-list h3 {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  color: var(--text-color);
+}
+
+/* === Recipe Cards === */
+.recipe-card {
+  background-color: var(--pastel-blue);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.recipe-card:hover {
+  transform: scale(1.02);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.recipe-card h3 {
+  padding: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  background-color: #ffffffa8;
+}
+
+/* === Recipes Grid === */
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* === Modal === */
+.modal-content {
+  background: var(--bg-light);
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
